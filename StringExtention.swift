@@ -78,6 +78,6 @@ extension String {
     }
     
     func trim () -> String {
-        return self.replace(this: " ", to: "")
+        return self.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
     }
 }
