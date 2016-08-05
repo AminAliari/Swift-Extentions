@@ -14,7 +14,10 @@ str.indexOf(target: "l") // 2
 str.lastIndexOf(target: "l") // 9
 str.substring(to: str.lastIndexOf(target: "l")!) // "Hello Wor"
 str.substring(from: 1, to: str.lastIndexOf(target: "l")!) // "ello Wor"
-
+str.replace(string: "Hello", with: "Bye") // Bye World
+str.split(separator: " ") // ["Hello", "World"]
+str = "   Hello World   "
+str.trim() // "HelloWorld"
 ```
 
 feel free to use this under Apache License terms.
