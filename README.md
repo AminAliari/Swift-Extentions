@@ -1,9 +1,8 @@
-#Swift String Extention
+#Swift String Extension
 
 
 
-This extention is a must have because with swift 3.0 so many string function are removed and the new approche is a bit confusing.
-so i decided to write this extension and i will definitly work more one it to make this a full swift string library.
+This extension is a must have because with swift 3.0 so many string functions are removed and the new approach is a bit confusing. So I decided to write this extension and I will definitely work more on it to make this a full swift string library.
 
 <b>Examples</b>
 ```swift
