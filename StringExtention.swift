@@ -26,7 +26,7 @@ extension String {
         var index:Int?
         var current = 0
         
-        for c in self.lowercased().characters {
+        for c in self.characters {
             if (c == target) {
                 index = current
                 break
@@ -38,9 +38,8 @@ extension String {
     
     func lastIndexOf(target: Character) -> Int? {
         var index : Int?
-        let str = self.lowercased()
         
-        for i in (0...str.length-1).reversed() {
+        for i in (0...self.length-1).reversed() {
             if (self[i] == target) {
                 index = i
                 break
@@ -73,8 +72,8 @@ extension String {
         return self.components(separatedBy: separator)
     }
     
-    func replace(this: String, to:String) -> String {
-        return self.replacingOccurrences(of: this, with: to)
+    func replace(this: String, with:String) -> String {
+        return self.replacingOccurrences(of: this, with: with)
     }
     
     func trim () -> String {
