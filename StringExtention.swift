@@ -2,14 +2,23 @@ import Foundation
 
 extension String {
     
+    subscript (i: Int) -> Character {
+        return self[self.intIndex(at: i)!]
+    }
+    
     var length: Int {
         get {
             return self.characters.count
         }
     }
     
-    subscript (i: Int) -> Character {
-        return self[self.index(self.startIndex, offsetBy: i)]
+    func intIndex (at: Int) -> Index? {
+        
+        if at < 0 || at >= self.length {
+            return nil
+        }
+        
+        return self.index(self.startIndex, offsetBy: at)
     }
     
     func indexOf (target : Character) -> Int? {
@@ -45,7 +54,7 @@ extension String {
             return nil
         }
         
-        let range = self.startIndex..<self.index(self.startIndex, offsetBy: to)
+        let range = self.startIndex..<self.intIndex(at: to)!
         return self.substring(with: range)
         
     }
@@ -60,4 +69,3 @@ extension String {
         return self.substring(with: range)
     }
 }
-
