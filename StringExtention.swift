@@ -68,4 +68,16 @@ extension String {
         let range = self.index(self.startIndex, offsetBy: from)..<self.index(self.startIndex, offsetBy: to)
         return self.substring(with: range)
     }
+    
+    func split(separator:String) -> [String] {
+        return self.components(separatedBy: separator)
+    }
+    
+    func replace(this: String, to:String) -> String {
+        return self.replacingOccurrences(of: this, with: to)
+    }
+    
+    func trim () -> String {
+        return self.replace(this: " ", to: "")
+    }
 }
