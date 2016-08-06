@@ -79,4 +79,12 @@ extension String {
     func trim () -> String {
         return self.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
     }
+    
+    mutating func remove(at:Int) {
+        self.remove(at: self.intIndex(at: at)!)
+    }
+    
+    func removeAllChar(target : Character) -> String {
+        return self.replace(this: "\(target)", with: "")
+    }
 }
