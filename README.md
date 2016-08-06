@@ -16,6 +16,8 @@ str.substring(to: str.lastIndexOf(target: "l")!) // "Hello Wor"
 str.substring(from: 1, to: str.lastIndexOf(target: "l")!) // "ello Wor"
 str.replace(string: "Hello", with: "Bye") // Bye World
 str.split(separator: " ") // ["Hello", "World"]
+str.removeAllChar("l") // "Heo Word"
+str.removeCharAt(1) // "Hllo World" (Changes the actuall str) [mutating]
 str = "   Hello World   "
 str.trim() // "Hello World"
 ```
