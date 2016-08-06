@@ -20,4 +20,4 @@ str = "   Hello World   "
 str.trim() // "Hello World"
 ```
 
-feel free to use this under Apache License terms.
+feel free to use this extension under Apache License terms.
