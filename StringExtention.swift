@@ -13,7 +13,6 @@ extension String {
     }
     
     func intIndex (at: Int) -> Index? {
-        
         if at < 0 || at >= self.length {
             return nil
         }
@@ -22,7 +21,6 @@ extension String {
     }
     
     func indexOf (target : Character) -> Int? {
-        
         var index:Int?
         var current = 0
         
@@ -59,7 +57,6 @@ extension String {
     }
     
     func substring(from: Int, to: Int) -> String? {
-        
         if from > to || from < 0 || to < 0  {
             return nil
         }
