@@ -6,7 +6,7 @@ This extension is a must have because with swift 3.0 so many string functions ar
 
 ##Examples##
 
-<b>Int Index Based subscript</b>
+<b>Int Index Based Subscript</b>
 ```swift
 let str = "Hello World"
 str[1] // "e"
@@ -38,6 +38,7 @@ let str = "Hello World"
 str.replace(string: "Hello", with: "Bye") // Bye World
 str.split(separator: " ") // ["Hello", "World"]
 ```
+
 <b>Removing Characters</b>
 ```swift
 let str = "Hello World"
