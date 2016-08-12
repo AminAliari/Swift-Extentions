@@ -1,3 +1,5 @@
+import Foundation
+
 extension String {
     
     subscript (i: Int) -> Character {
