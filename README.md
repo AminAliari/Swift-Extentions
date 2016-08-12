@@ -12,18 +12,19 @@ let str = "Hello World"
 str[1] // "e"
 ```
 
-<b>Length</b>
-```swift
-let str = "Hello World"
-str.length // 11
-```
-
 <b>Index Of Characters</b>
 ```swift
 let str = "Hello World"
 str.indexOf(target: "l") // 2
 str.lastIndexOf(target: "l") // 9
 ```
+
+<b>Length</b>
+```swift
+let str = "Hello World"
+str.length // 11
+```
+
 <b>Substring</b>
 ```swift
 let str = "Hello World"
@@ -37,7 +38,7 @@ let str = "Hello World"
 str.replace(string: "Hello", with: "Bye") // Bye World
 str.split(separator: " ") // ["Hello", "World"]
 ```
-<b>Remove Characters</b>
+<b>Removing Characters</b>
 ```swift
 let str = "Hello World"
 str.removeAllChar("l") // "Heo Word"
