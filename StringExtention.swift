@@ -1,5 +1,3 @@
-import Foundation
-
 extension String {
     
     subscript (i: Int) -> Character {
@@ -61,7 +59,7 @@ extension String {
             return nil
         }
         
-        let range = self.index(self.startIndex, offsetBy: from)..<self.index(self.startIndex, offsetBy: to)
+        let range = self.intIndex(at: from)!..<self.intIndex(at: to)!
         return self.substring(with: range)
     }
     
@@ -75,6 +73,15 @@ extension String {
     
     func trim () -> String {
         return self.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
+    }
+    
+    func trim (char : Character) -> String {
+        return self.trimmingCharacters(in: CharacterSet(charactersIn: "\(char)"))
+    }
+    
+    
+    func trim (charsInString : String) -> String {
+        return self.trimmingCharacters(in: CharacterSet(charactersIn: charsInString))
     }
     
     mutating func remove(at:Int) {
