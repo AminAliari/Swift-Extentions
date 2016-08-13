@@ -81,7 +81,6 @@ extension String {
         return self.trimmingCharacters(in: CharacterSet(charactersIn: "\(char)"))
     }
     
-    
     func trim (charsInString : String) -> String {
         return self.trimmingCharacters(in: CharacterSet(charactersIn: charsInString))
     }
