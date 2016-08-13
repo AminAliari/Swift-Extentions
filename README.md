@@ -41,7 +41,7 @@ str.split(separator: " ") // ["Hello", "World"]
 
 <b>Removing Characters</b>
 ```swift
-let str = "Hello World"
+var str = "Hello World"
 str.removeAllChar("l") // "Heo Word"
 str.removeCharAt(1) // "Hllo World" (Changes the actuall str) [mutating]
 ```
