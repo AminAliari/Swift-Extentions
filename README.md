@@ -4,7 +4,7 @@
 
 This extension is a must have because with swift 3.0 so many string functions are removed and the new approach is a bit confusing. So I decided to write this extension and I will definitely work more on it to make this a full swift string library.
 
-##Examples##
+## Examples
 
 <b>Int Index Based Subscript</b>
 ```swift
